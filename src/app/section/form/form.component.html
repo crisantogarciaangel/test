@@ -1,0 +1,38 @@
+
+<div style="text-align: center; padding-bottom: 3%">
+  
+  <h1>Registro de producto</h1>
+</div>
+
+<div class="cuerpo">
+
+  <form class="example-form" [formGroup]="form" novalidate>
+  <mat-form-field class="example-full-width">
+    <mat-label>Nombre:*</mat-label>
+    <input matInput placeholder="Nombre" formControlName="nombre">
+  </mat-form-field>
+  
+  <mat-form-field class="example-full-width">
+    <mat-label>Precio:*</mat-label>
+    <input matInput placeholder="Precio" formControlName="precio">
+  </mat-form-field>
+
+
+   <mat-form-field class="example-full-width">
+    <mat-label>Cantidad Almacen:*</mat-label>
+    <input matInput type="number" placeholder="Cantidad Almacen" formControlName="catAlmacen">
+  </mat-form-field>
+
+   <mat-form-field class="example-full-width">
+    <mat-label>Fecha Caducidad:</mat-label>
+    <input matInput type="date" formControlName="fechaCaducidad" placeholder="Fecha Caducidad" >
+  </mat-form-field>
+  
+
+
+   <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="save()">Guardar</button>
+</form>
+
+
+</div>
+   

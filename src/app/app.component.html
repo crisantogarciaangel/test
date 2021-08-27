@@ -1,0 +1,21 @@
+
+<mat-toolbar color="primary">
+ <!-- #docregion mat-menu-trigger-for -->
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<!-- #enddocregion mat-menu-trigger-for -->
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [routerLink]="['form']" >Formulario</button>
+  <button mat-menu-item [routerLink]="['list']">Lista de productos</button>
+</mat-menu><!-- #docregion mat-menu-trigger-for -->
+
+
+</mat-toolbar>
+
+
+
+
+
+
+  <router-outlet></router-outlet>
+
+

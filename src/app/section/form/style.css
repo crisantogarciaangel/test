@@ -1,0 +1,18 @@
+/* Add application styles & imports to this file! */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+  
+.example-form {
+  min-width: 30%;
+  max-width: 30%;
+  width: 100%;
+}
+  
+.example-full-width {
+  width: 100%;
+}
+
+.cuerpo {
+	padding-left: 35%;
+	text-align: center;
+	padding-top:  2%;
+}
